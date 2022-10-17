@@ -1,32 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
+
 /**
- * main - Type anythingg that fits
- *
- * Return: 0
+ * main - Entry
+ * Return: Always 0
  */
 int main(void)
 {
 	int n;
 	int x;
 
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	x = n % 10;
-	ptintf("Last digit of %d is %d ", n, x);
-	if (x > 5)
+
+	if (n > 5)
 	{
-		printf("and is greater than 5");
+		printf("Last digit of %d is %d and is greater than 5\n", n, x);
 	}
-	if (x == 0)
+	else if (x == 0)
 	{
-		printf("and is 0");
+		printf("Last digit of %d is %d and is greater than 5\n", n, x);
 	}
-	if (x < 6 && x != 0)
+	else
 	{
-		printf("and is less than 6 and not 0");
+		printf("Last digit of %d is %d and is greater than 5\n", n, x);
 	}
-	printf("\n");
 	return (0);
 }
