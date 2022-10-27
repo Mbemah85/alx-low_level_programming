@@ -1,10 +1,11 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _strncat - Joining two strings with n bytes
- * @dest: copy to
- * @src: copy from
- * @n: number of char to be copied
+ * _strncat -> function to append some charx
+ * @dest: first param
+ * @src: second param
+ * @n: third param
  * Return: string
  */
 char *_strncat(char *dest, char *src, int n)
